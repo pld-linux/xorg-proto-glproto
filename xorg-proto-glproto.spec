@@ -1,12 +1,12 @@
 Summary:	GL protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u GL i pomocnicze
 Name:		xorg-proto-glproto
-Version:	1.4
-Release:	0.01
+Version:	1.4.1
+Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/proto/glproto-%{version}.tar.bz2
-# Source0-md5:	9cda6fbdcc75f6d7d9cd1d3839264609
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/proto/glproto-%{version}.tar.bz2
+# Source0-md5:	dd439aa517177697d60d7ee6cdbc614f
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -24,6 +24,7 @@ Nag³ówki protoko³u GL i pomocnicze.
 Summary:	GL protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u GL i pomocnicze
 Group:		X11/Development/Libraries
+Requires:	xorg-proto-xproto-devel
 
 %description devel
 GL protocol and ancillary headers.
@@ -53,6 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
+%dir %{_includedir}/GL
 %{_includedir}/GL/*.h
 %{_includedir}/GL/internal
 %{_pkgconfigdir}/glproto.pc
