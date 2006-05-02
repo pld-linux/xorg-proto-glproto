@@ -1,12 +1,12 @@
 Summary:	GL protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u GL i pomocnicze
 Name:		xorg-proto-glproto
-Version:	1.4.6
+Version:	1.4.7
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/glproto-%{version}.tar.bz2
-# Source0-md5:	b30bff86821f0636563289e5911c74c6
+# Source0-md5:	e4b1c5a323149d97f29434e5ace921c8
 Patch0:		%{name}-shaders.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
