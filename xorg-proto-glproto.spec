@@ -1,5 +1,5 @@
 Summary:	GL protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 GL i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u GL i pomocnicze
 Name:		xorg-proto-glproto
 Version:	1.4.8
 Release:	1
@@ -17,20 +17,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GL protocol and ancillary headers.
 
-%description -l pl
-Nag丑wki protoko硊 GL i pomocnicze.
+%description -l pl.UTF-8
+Nag艂贸wki protoko艂u GL i pomocnicze.
 
 %package devel
 Summary:	GL protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 GL i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u GL i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 
 %description devel
 GL protocol and ancillary headers.
 
-%description devel -l pl
-Nag丑wki protoko硊 GL i pomocnicze.
+%description devel -l pl.UTF-8
+Nag艂贸wki protoko艂u GL i pomocnicze.
 
 %prep
 %setup -q -n glproto-%{version}
