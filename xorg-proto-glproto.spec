@@ -24,6 +24,8 @@ Nagłówki protokołu GL i pomocnicze.
 Summary:	GL protocol and ancillary headers
 Summary(pl.UTF-8):	Nagłówki protokołu GL i pomocnicze
 Group:		X11/Development/Libraries
+# <GL/glxint.h> needs <X11/X*.h> and <GL/gl.h>
+Requires:	OpenGL-devel
 Requires:	xorg-proto-xproto-devel
 
 %description devel
@@ -56,7 +58,10 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-%dir %{_includedir}/GL
-%{_includedir}/GL/*.h
-%{_includedir}/GL/internal
+%{_includedir}/GL/glxint.h
+%{_includedir}/GL/glxmd.h
+%{_includedir}/GL/glxproto.h
+%{_includedir}/GL/glxtokens.h
+%dir %{_includedir}/GL/internal
+%{_includedir}/GL/internal/glcore.h
 %{_pkgconfigdir}/glproto.pc
