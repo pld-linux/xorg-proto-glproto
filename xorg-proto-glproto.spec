@@ -1,13 +1,12 @@
-Summary:	GL protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu GL i pomocnicze
+Summary:	GL extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia GL
 Name:		xorg-proto-glproto
-Version:	1.4.8
+Version:	1.4.9
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/glproto-%{version}.tar.bz2
-# Source0-md5:	3dfbd17203c0c88b94b6f579f24c11cc
-Patch0:		%{name}-shaders.patch
+# Source0-md5:	e60951628422663e60faeb400f27bac1
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -15,28 +14,27 @@ BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GL protocol and ancillary headers.
+GL extension headers.
 
 %description -l pl.UTF-8
-Nagłówki protokołu GL i pomocnicze.
+Nagłówki rozszerzenia GL.
 
 %package devel
-Summary:	GL protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu GL i pomocnicze
+Summary:	GL extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia GL
 Group:		X11/Development/Libraries
 # <GL/glxint.h> needs <X11/X*.h> and <GL/gl.h>
 Requires:	OpenGL-devel
 Requires:	xorg-proto-xproto-devel
 
 %description devel
-GL protocol and ancillary headers.
+GL extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki protokołu GL i pomocnicze.
+Nagłówki rozszerzenia GL.
 
 %prep
 %setup -q -n glproto-%{version}
-%patch0 -p1
 
 %build
 %{__aclocal}
