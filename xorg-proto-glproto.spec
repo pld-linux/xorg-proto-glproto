@@ -1,12 +1,12 @@
 Summary:	GL extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia GL
 Name:		xorg-proto-glproto
-Version:	1.4.9
+Version:	1.4.10
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/glproto-%{version}.tar.bz2
-# Source0-md5:	e60951628422663e60faeb400f27bac1
+# Source0-md5:	c9f8cebfba72bfab674bc0170551fb8d
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
