@@ -1,13 +1,14 @@
+# NOTE: now maintained in xorg-proto-xorgproto.spec
 Summary:	GLX extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia GLX
 Name:		xorg-proto-glproto
 Version:	1.4.17
-Release:	2
+Release:	2.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/individual/proto/glproto-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/proto/glproto-%{version}.tar.bz2
 # Source0-md5:	5565f1b0facf4a59c2778229c1f70d10
-URL:		http://xorg.freedesktop.org/
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig
